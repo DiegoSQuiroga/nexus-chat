@@ -1,0 +1,655 @@
+[debug] [2025-06-13T18:13:45.461Z] ----------------------------------------------------------------------
+[debug] [2025-06-13T18:13:45.464Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\quiro\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2025-06-13T18:13:45.464Z] CLI Version:   14.7.0
+[debug] [2025-06-13T18:13:45.464Z] Platform:      win32
+[debug] [2025-06-13T18:13:45.464Z] Node Version:  v22.14.0
+[debug] [2025-06-13T18:13:45.464Z] Time:          Fri Jun 13 2025 20:13:45 GMT+0200 (Central European Summer Time)
+[debug] [2025-06-13T18:13:45.465Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-06-13T18:13:45.652Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-13T18:13:45.653Z] > authorizing via signed-in user (quirogadiegosebastian@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2025-06-13T18:13:45.661Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-06-13T18:13:45.661Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2025-06-13T18:13:45.665Z] [hub] writing locator at C:\Users\quiro\AppData\Local\Temp\hub-nexus-hostel-app.json
+[debug] [2025-06-13T18:13:45.682Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-06-13T18:13:45.682Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-06-13T18:13:45.682Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-06-13T18:13:45.683Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: apphosting, auth, firestore, database, hosting, pubsub, storage, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mapphosting, auth, firestore, database, hosting, pubsub, storage, dataconnect\u001b[22m"}}
+[debug] [2025-06-13T18:13:45.707Z] defaultcredentials: writing to file C:\Users\quiro\AppData\Roaming\firebase\quirogadiegosebastian_gmail_com_application_default_credentials.json
+[debug] [2025-06-13T18:13:45.708Z] Setting GAC to C:\Users\quiro\AppData\Roaming\firebase\quirogadiegosebastian_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\quiro\\AppData\\Roaming\\firebase\\quirogadiegosebastian_gmail_com_application_default_credentials.json"}}
+[debug] [2025-06-13T18:13:45.709Z] Checked if tokens are valid: false, expires at: 1749832254988
+[debug] [2025-06-13T18:13:45.709Z] Checked if tokens are valid: false, expires at: 1749832254988
+[debug] [2025-06-13T18:13:45.709Z] > refreshing access token with scopes: []
+[debug] [2025-06-13T18:13:45.710Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-06-13T18:13:45.710Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-06-13T18:13:45.838Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-06-13T18:13:45.838Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-06-13T18:13:45.859Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/nexus-hostel-app/adminSdkConfig [none]
+[debug] [2025-06-13T18:13:46.219Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/nexus-hostel-app/adminSdkConfig 200
+[debug] [2025-06-13T18:13:46.220Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/nexus-hostel-app/adminSdkConfig {"projectId":"nexus-hostel-app","storageBucket":"nexus-hostel-app.firebasestorage.app"}
+[info] i  ui: downloading ui-v1.15.0.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.15.0.zip..."}}
+[debug] [2025-06-13T18:13:46.240Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.15.0.zip 
+[debug] [2025-06-13T18:13:46.469Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.15.0.zip 200
+[debug] [2025-06-13T18:13:46.470Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.15.0.zip [stream]
+[debug] [2025-06-13T18:13:46.989Z] Data is 3538469
+[debug] [2025-06-13T18:13:46.989Z] [unzip] Entry: client/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-06-13T18:13:46.989Z] [unzip] Processing entry: client\
+[debug] [2025-06-13T18:13:46.989Z] [unzip] mkdir: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\
+[debug] [2025-06-13T18:13:46.990Z] [unzip] Entry: client/favicon-16x16.png (compressed_size=293 bytes, uncompressed_size=293 bytes)
+[debug] [2025-06-13T18:13:46.990Z] [unzip] Processing entry: client\favicon-16x16.png
+[debug] [2025-06-13T18:13:46.990Z] [unzip] else mkdir: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-06-13T18:13:46.991Z] [unzip] Writing file: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\favicon-16x16.png
+[debug] [2025-06-13T18:13:46.992Z] [unzip] Entry: client/safari-pinned-tab.svg (compressed_size=1433 bytes, uncompressed_size=2611 bytes)
+[debug] [2025-06-13T18:13:46.992Z] [unzip] Processing entry: client\safari-pinned-tab.svg
+[debug] [2025-06-13T18:13:46.992Z] [unzip] else mkdir: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-06-13T18:13:46.992Z] [unzip] deflating: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\safari-pinned-tab.svg
+[debug] [2025-06-13T18:13:46.994Z] [unzip] Entry: client/favicon.ico (compressed_size=2933 bytes, uncompressed_size=13294 bytes)
+[debug] [2025-06-13T18:13:46.995Z] [unzip] Processing entry: client\favicon.ico
+[debug] [2025-06-13T18:13:46.995Z] [unzip] else mkdir: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-06-13T18:13:46.995Z] [unzip] deflating: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\favicon.ico
+[debug] [2025-06-13T18:13:46.996Z] [unzip] Entry: client/index.html (compressed_size=1364 bytes, uncompressed_size=3071 bytes)
+[debug] [2025-06-13T18:13:46.996Z] [unzip] Processing entry: client\index.html
+[debug] [2025-06-13T18:13:46.996Z] [unzip] else mkdir: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-06-13T18:13:46.996Z] [unzip] deflating: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\index.html
+[debug] [2025-06-13T18:13:46.997Z] [unzip] Entry: client/android-chrome-192x192.png (compressed_size=2684 bytes, uncompressed_size=2684 bytes)
+[debug] [2025-06-13T18:13:46.997Z] [unzip] Processing entry: client\android-chrome-192x192.png
+[debug] [2025-06-13T18:13:46.997Z] [unzip] else mkdir: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-06-13T18:13:46.997Z] [unzip] Writing file: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\android-chrome-192x192.png
+[debug] [2025-06-13T18:13:46.998Z] [unzip] Entry: client/apple-touch-icon.png (compressed_size=2123 bytes, uncompressed_size=2152 bytes)
+[debug] [2025-06-13T18:13:46.998Z] [unzip] Processing entry: client\apple-touch-icon.png
+[debug] [2025-06-13T18:13:46.998Z] [unzip] else mkdir: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-06-13T18:13:46.998Z] [unzip] deflating: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\apple-touch-icon.png
+[debug] [2025-06-13T18:13:46.999Z] [unzip] Entry: client/android-chrome-512x512.png (compressed_size=5369 bytes, uncompressed_size=5411 bytes)
+[debug] [2025-06-13T18:13:46.999Z] [unzip] Processing entry: client\android-chrome-512x512.png
+[debug] [2025-06-13T18:13:46.999Z] [unzip] else mkdir: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-06-13T18:13:46.999Z] [unzip] deflating: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\android-chrome-512x512.png
+[debug] [2025-06-13T18:13:47.000Z] [unzip] Entry: client/manifest.json (compressed_size=245 bytes, uncompressed_size=551 bytes)
+[debug] [2025-06-13T18:13:47.000Z] [unzip] Processing entry: client\manifest.json
+[debug] [2025-06-13T18:13:47.000Z] [unzip] else mkdir: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-06-13T18:13:47.000Z] [unzip] deflating: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\manifest.json
+[debug] [2025-06-13T18:13:47.001Z] [unzip] Entry: client/robots.txt (compressed_size=26 bytes, uncompressed_size=26 bytes)
+[debug] [2025-06-13T18:13:47.001Z] [unzip] Processing entry: client\robots.txt
+[debug] [2025-06-13T18:13:47.001Z] [unzip] else mkdir: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-06-13T18:13:47.001Z] [unzip] Writing file: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\robots.txt
+[debug] [2025-06-13T18:13:47.001Z] [unzip] Entry: client/mstile-150x150.png (compressed_size=2034 bytes, uncompressed_size=2034 bytes)
+[debug] [2025-06-13T18:13:47.002Z] [unzip] Processing entry: client\mstile-150x150.png
+[debug] [2025-06-13T18:13:47.002Z] [unzip] else mkdir: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-06-13T18:13:47.002Z] [unzip] Writing file: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\mstile-150x150.png
+[debug] [2025-06-13T18:13:47.002Z] [unzip] Entry: client/assets/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-06-13T18:13:47.002Z] [unzip] Processing entry: client\assets\
+[debug] [2025-06-13T18:13:47.002Z] [unzip] mkdir: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\assets\
+[debug] [2025-06-13T18:13:47.003Z] [unzip] Entry: client/assets/index-BX-A56oj.js (compressed_size=582089 bytes, uncompressed_size=2092775 bytes)
+[debug] [2025-06-13T18:13:47.003Z] [unzip] Processing entry: client\assets\index-BX-A56oj.js
+[debug] [2025-06-13T18:13:47.003Z] [unzip] else mkdir: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\assets
+[debug] [2025-06-13T18:13:47.003Z] [unzip] deflating: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\assets\index-BX-A56oj.js
+[debug] [2025-06-13T18:13:47.012Z] [unzip] Entry: client/assets/index-CjB9C900.css (compressed_size=35979 bytes, uncompressed_size=298654 bytes)
+[debug] [2025-06-13T18:13:47.012Z] [unzip] Processing entry: client\assets\index-CjB9C900.css
+[debug] [2025-06-13T18:13:47.012Z] [unzip] else mkdir: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\assets
+[debug] [2025-06-13T18:13:47.012Z] [unzip] deflating: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\assets\index-CjB9C900.css
+[debug] [2025-06-13T18:13:47.014Z] [unzip] Entry: client/assets/index-BX-A56oj.js.map (compressed_size=2362482 bytes, uncompressed_size=10036679 bytes)
+[debug] [2025-06-13T18:13:47.014Z] [unzip] Processing entry: client\assets\index-BX-A56oj.js.map
+[debug] [2025-06-13T18:13:47.014Z] [unzip] else mkdir: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\assets
+[debug] [2025-06-13T18:13:47.014Z] [unzip] deflating: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\assets\index-BX-A56oj.js.map
+[debug] [2025-06-13T18:13:47.046Z] [unzip] Entry: client/assets/extensions/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-06-13T18:13:47.046Z] [unzip] Processing entry: client\assets\extensions\
+[debug] [2025-06-13T18:13:47.046Z] [unzip] mkdir: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\assets\extensions\
+[debug] [2025-06-13T18:13:47.046Z] [unzip] Entry: client/assets/extensions/default-extension.png (compressed_size=1646 bytes, uncompressed_size=1657 bytes)
+[debug] [2025-06-13T18:13:47.047Z] [unzip] Processing entry: client\assets\extensions\default-extension.png
+[debug] [2025-06-13T18:13:47.047Z] [unzip] else mkdir: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\assets\extensions
+[debug] [2025-06-13T18:13:47.047Z] [unzip] deflating: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\assets\extensions\default-extension.png
+[debug] [2025-06-13T18:13:47.047Z] [unzip] Entry: client/assets/img/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-06-13T18:13:47.047Z] [unzip] Processing entry: client\assets\img\
+[debug] [2025-06-13T18:13:47.048Z] [unzip] mkdir: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\assets\img\
+[debug] [2025-06-13T18:13:47.048Z] [unzip] Entry: client/assets/img/database.png (compressed_size=29449 bytes, uncompressed_size=29988 bytes)
+[debug] [2025-06-13T18:13:47.048Z] [unzip] Processing entry: client\assets\img\database.png
+[debug] [2025-06-13T18:13:47.048Z] [unzip] else mkdir: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\assets\img
+[debug] [2025-06-13T18:13:47.048Z] [unzip] deflating: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\assets\img\database.png
+[debug] [2025-06-13T18:13:47.049Z] [unzip] Entry: client/assets/provider-icons/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-06-13T18:13:47.049Z] [unzip] Processing entry: client\assets\provider-icons\
+[debug] [2025-06-13T18:13:47.049Z] [unzip] mkdir: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\
+[debug] [2025-06-13T18:13:47.049Z] [unzip] Entry: client/assets/provider-icons/auth_service_saml.svg (compressed_size=575 bytes, uncompressed_size=1226 bytes)
+[debug] [2025-06-13T18:13:47.049Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_saml.svg
+[debug] [2025-06-13T18:13:47.049Z] [unzip] else mkdir: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-06-13T18:13:47.049Z] [unzip] deflating: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_saml.svg
+[debug] [2025-06-13T18:13:47.050Z] [unzip] Entry: client/assets/provider-icons/auth_service_phone.svg (compressed_size=261 bytes, uncompressed_size=414 bytes)
+[debug] [2025-06-13T18:13:47.050Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_phone.svg
+[debug] [2025-06-13T18:13:47.050Z] [unzip] else mkdir: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-06-13T18:13:47.050Z] [unzip] deflating: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_phone.svg
+[debug] [2025-06-13T18:13:47.051Z] [unzip] Entry: client/assets/provider-icons/auth_service_facebook.svg (compressed_size=289 bytes, uncompressed_size=457 bytes)
+[debug] [2025-06-13T18:13:47.051Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_facebook.svg
+[debug] [2025-06-13T18:13:47.051Z] [unzip] else mkdir: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-06-13T18:13:47.051Z] [unzip] deflating: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_facebook.svg
+[debug] [2025-06-13T18:13:47.052Z] [unzip] Entry: client/assets/provider-icons/auth_service_game_center.svg (compressed_size=991 bytes, uncompressed_size=3921 bytes)
+[debug] [2025-06-13T18:13:47.052Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_game_center.svg
+[debug] [2025-06-13T18:13:47.052Z] [unzip] else mkdir: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-06-13T18:13:47.052Z] [unzip] deflating: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_game_center.svg
+[debug] [2025-06-13T18:13:47.052Z] [unzip] Entry: client/assets/provider-icons/auth_service_apple.svg (compressed_size=230 bytes, uncompressed_size=334 bytes)
+[debug] [2025-06-13T18:13:47.052Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_apple.svg
+[debug] [2025-06-13T18:13:47.052Z] [unzip] else mkdir: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-06-13T18:13:47.053Z] [unzip] deflating: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_apple.svg
+[debug] [2025-06-13T18:13:47.053Z] [unzip] Entry: client/assets/provider-icons/auth_service_github.svg (compressed_size=466 bytes, uncompressed_size=838 bytes)
+[debug] [2025-06-13T18:13:47.053Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_github.svg
+[debug] [2025-06-13T18:13:47.053Z] [unzip] else mkdir: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-06-13T18:13:47.053Z] [unzip] deflating: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_github.svg
+[debug] [2025-06-13T18:13:47.054Z] [unzip] Entry: client/assets/provider-icons/auth_service_mslive.svg (compressed_size=203 bytes, uncompressed_size=378 bytes)
+[debug] [2025-06-13T18:13:47.054Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_mslive.svg
+[debug] [2025-06-13T18:13:47.054Z] [unzip] else mkdir: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-06-13T18:13:47.054Z] [unzip] deflating: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_mslive.svg
+[debug] [2025-06-13T18:13:47.054Z] [unzip] Entry: client/assets/provider-icons/auth_service_yahoo.svg (compressed_size=577 bytes, uncompressed_size=1182 bytes)
+[debug] [2025-06-13T18:13:47.054Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_yahoo.svg
+[debug] [2025-06-13T18:13:47.054Z] [unzip] else mkdir: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-06-13T18:13:47.055Z] [unzip] deflating: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_yahoo.svg
+[debug] [2025-06-13T18:13:47.055Z] [unzip] Entry: client/assets/provider-icons/auth_service_twitter.svg (compressed_size=444 bytes, uncompressed_size=751 bytes)
+[debug] [2025-06-13T18:13:47.055Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_twitter.svg
+[debug] [2025-06-13T18:13:47.055Z] [unzip] else mkdir: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-06-13T18:13:47.055Z] [unzip] deflating: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_twitter.svg
+[debug] [2025-06-13T18:13:47.056Z] [unzip] Entry: client/assets/provider-icons/auth_service_play_games.svg (compressed_size=565 bytes, uncompressed_size=1173 bytes)
+[debug] [2025-06-13T18:13:47.056Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_play_games.svg
+[debug] [2025-06-13T18:13:47.056Z] [unzip] else mkdir: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-06-13T18:13:47.056Z] [unzip] deflating: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_play_games.svg
+[debug] [2025-06-13T18:13:47.057Z] [unzip] Entry: client/assets/provider-icons/auth_service_email.svg (compressed_size=228 bytes, uncompressed_size=326 bytes)
+[debug] [2025-06-13T18:13:47.057Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_email.svg
+[debug] [2025-06-13T18:13:47.057Z] [unzip] else mkdir: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-06-13T18:13:47.057Z] [unzip] deflating: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_email.svg
+[debug] [2025-06-13T18:13:47.058Z] [unzip] Entry: client/assets/provider-icons/auth_service_google.svg (compressed_size=409 bytes, uncompressed_size=720 bytes)
+[debug] [2025-06-13T18:13:47.058Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_google.svg
+[debug] [2025-06-13T18:13:47.058Z] [unzip] else mkdir: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-06-13T18:13:47.058Z] [unzip] deflating: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_google.svg
+[debug] [2025-06-13T18:13:47.059Z] [unzip] Entry: client/assets/provider-icons/auth_service_oidc.svg (compressed_size=414 bytes, uncompressed_size=858 bytes)
+[debug] [2025-06-13T18:13:47.059Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_oidc.svg
+[debug] [2025-06-13T18:13:47.059Z] [unzip] else mkdir: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-06-13T18:13:47.059Z] [unzip] deflating: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_oidc.svg
+[debug] [2025-06-13T18:13:47.059Z] [unzip] Entry: client/browserconfig.xml (compressed_size=491 bytes, uncompressed_size=822 bytes)
+[debug] [2025-06-13T18:13:47.059Z] [unzip] Processing entry: client\browserconfig.xml
+[debug] [2025-06-13T18:13:47.059Z] [unzip] else mkdir: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-06-13T18:13:47.060Z] [unzip] deflating: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\browserconfig.xml
+[debug] [2025-06-13T18:13:47.060Z] [unzip] Entry: client/favicon-32x32.png (compressed_size=475 bytes, uncompressed_size=475 bytes)
+[debug] [2025-06-13T18:13:47.060Z] [unzip] Processing entry: client\favicon-32x32.png
+[debug] [2025-06-13T18:13:47.060Z] [unzip] else mkdir: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-06-13T18:13:47.060Z] [unzip] Writing file: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\client\favicon-32x32.png
+[debug] [2025-06-13T18:13:47.061Z] [unzip] Entry: server/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-06-13T18:13:47.061Z] [unzip] Processing entry: server\
+[debug] [2025-06-13T18:13:47.061Z] [unzip] mkdir: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\server\
+[debug] [2025-06-13T18:13:47.061Z] [unzip] Entry: server/server.mjs.map (compressed_size=217845 bytes, uncompressed_size=944978 bytes)
+[debug] [2025-06-13T18:13:47.061Z] [unzip] Processing entry: server\server.mjs.map
+[debug] [2025-06-13T18:13:47.061Z] [unzip] else mkdir: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\server
+[debug] [2025-06-13T18:13:47.061Z] [unzip] deflating: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\server\server.mjs.map
+[debug] [2025-06-13T18:13:47.064Z] [unzip] Entry: server/server.mjs (compressed_size=276407 bytes, uncompressed_size=933701 bytes)
+[debug] [2025-06-13T18:13:47.064Z] [unzip] Processing entry: server\server.mjs
+[debug] [2025-06-13T18:13:47.064Z] [unzip] else mkdir: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\server
+[debug] [2025-06-13T18:13:47.065Z] [unzip] deflating: C:\Users\quiro\.cache\firebase\emulators\ui-v1.15.0\server\server.mjs
+[info] i  functions: Watching "C:\Users\quiro\nexus-chat-fixed\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\quiro\\nexus-chat-fixed\\functions\" for Cloud Functions..."}}
+[debug] [2025-06-13T18:13:47.076Z] Validating nodejs source
+[debug] [2025-06-13T18:13:47.739Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "echo \"Skipping lint\"",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^1.9.0",
+    "firebase-admin": "^13.4.0",
+    "firebase-functions": "^6.3.2"
+  },
+  "private": true
+}
+[debug] [2025-06-13T18:13:47.740Z] Building nodejs source
+[debug] [2025-06-13T18:13:47.740Z] Failed to find version of module node: reached end of search path C:\Users\quiro\nexus-chat-fixed\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-06-13T18:13:47.742Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-06-13T18:13:47.746Z] Found firebase-functions binary at 'C:\Users\quiro\nexus-chat-fixed\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8544
+
+[debug] [2025-06-13T18:13:48.162Z] Got response from /__/functions.yaml {"endpoints":{"chatWithNexus":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["us-central1"],"secretEnvironmentVariables":[{"key":"OPENAI_KEY"}],"labels":{},"httpsTrigger":{},"entryPoint":"chatWithNexus"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{},"params":[{"type":"secret","name":"OPENAI_KEY"}]}
+[info] +  functions: Loaded functions definitions from source: chatWithNexus. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: chatWithNexus."}}
+[info] +  functions[us-central1-chatWithNexus]: http function initialized (http://127.0.0.1:5001/nexus-hostel-app/us-central1/chatWithNexus). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/nexus-hostel-app/us-central1/chatWithNexus)."}}
+[debug] [2025-06-13T18:13:52.208Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub host: 127.0.0.1 port: 4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2025-06-13T18:15:19.881Z] [work-queue] {"queuedWork":["/nexus-hostel-app/us-central1/chatWithNexus-2025-06-13T18:15:19.881Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-13T18:15:19.881Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/nexus-hostel-app/us-central1/chatWithNexus-2025-06-13T18:15:19.881Z"],"workRunningCount":1}
+[debug] [2025-06-13T18:15:19.882Z] Accepted request POST /nexus-hostel-app/us-central1/chatWithNexus --> us-central1-chatWithNexus
+[debug] [2025-06-13T18:15:19.884Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-06-13T18:15:19.885Z] [functions] Got req.url=/nexus-hostel-app/us-central1/chatWithNexus, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/nexus-hostel-app/us-central1/chatWithNexus, mapping to path=/"}}
+[info] i  functions: Trying to access secret OPENAI_KEY@latest {"metadata":{"emulator":{"name":"functions"},"message":"Trying to access secret OPENAI_KEY@latest"}}
+[debug] [2025-06-13T18:15:19.887Z] Checked if tokens are valid: true, expires at: 1749842024838
+[debug] [2025-06-13T18:15:19.887Z] Checked if tokens are valid: true, expires at: 1749842024838
+[debug] [2025-06-13T18:15:19.887Z] >>> [apiv2][query] GET https://secretmanager.googleapis.com/v1/projects/nexus-hostel-app/secrets/OPENAI_KEY/versions/latest:access [none]
+[debug] [2025-06-13T18:15:20.433Z] <<< [apiv2][status] GET https://secretmanager.googleapis.com/v1/projects/nexus-hostel-app/secrets/OPENAI_KEY/versions/latest:access 200
+[debug] [2025-06-13T18:15:20.433Z] <<< [apiv2][body] GET https://secretmanager.googleapis.com/v1/projects/nexus-hostel-app/secrets/OPENAI_KEY/versions/latest:access {"name":"projects/699025223968/secrets/OPENAI_KEY/versions/2","payload":{"data":"c2stcHJvai1FS3hMdG93NzVnZ01jb3dxclVaUHJBaVdxNzRCWEsyWlo3VDlkdEIwR0lHb0pNY3Mza25rNkExZDZFMjNiREpVQ1BLaWZFSU9NeFQzQmxia0ZKMVRfTXJjTmh0ZlprZlk5VTlHNGJUSGdTby1OXzYxdnJUeW1XUzZrM016ckVlZTJ5NE80R3ZiTUpyV2ktUDNjS1p6UXNiZ0drZ0E=","dataCrc32c":"3869055625"}}
+[debug] [2025-06-13T18:15:20.442Z] [worker-pool] addWorker(us-central1-chatWithNexus) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-chatWithNexus)"}}
+[debug] [2025-06-13T18:15:20.443Z] [worker-pool] Adding worker with key us-central1-chatWithNexus, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-chatWithNexus, total=1"}}
+[debug] [2025-06-13T18:15:21.260Z] [runtime-status] [784] Resolved module firebase-admin {"declared":true,"installed":true,"version":"13.4.0","resolution":"C:\\Users\\quiro\\nexus-chat-fixed\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[runtime-status] [784] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"13.4.0\",\"resolution\":\"C:\\\\Users\\\\quiro\\\\nexus-chat-fixed\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2025-06-13T18:15:21.261Z] [runtime-status] [784] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.3.2","resolution":"C:\\Users\\quiro\\nexus-chat-fixed\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[runtime-status] [784] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"C:\\\\Users\\\\quiro\\\\nexus-chat-fixed\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2025-06-13T18:15:21.261Z] [runtime-status] [784] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[runtime-status] [784] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2025-06-13T18:15:21.262Z] [runtime-status] [784] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.3.2","resolution":"C:\\Users\\quiro\\nexus-chat-fixed\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[runtime-status] [784] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"C:\\\\Users\\\\quiro\\\\nexus-chat-fixed\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2025-06-13T18:15:21.555Z] [runtime-status] [784] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[runtime-status] [784] Checked functions.config() {\"config\":{}}"}}
+[debug] [2025-06-13T18:15:21.555Z] [runtime-status] [784] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"6.3.2","resolution":"C:\\Users\\quiro\\nexus-chat-fixed\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[runtime-status] [784] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"C:\\\\Users\\\\quiro\\\\nexus-chat-fixed\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}}"}}
+[debug] [2025-06-13T18:15:21.556Z] [runtime-status] [784] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.3.2","resolution":"C:\\Users\\quiro\\nexus-chat-fixed\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[runtime-status] [784] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"C:\\\\Users\\\\quiro\\\\nexus-chat-fixed\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2025-06-13T18:15:21.559Z] [runtime-status] [784] Resolved module firebase-admin {"declared":true,"installed":true,"version":"13.4.0","resolution":"C:\\Users\\quiro\\nexus-chat-fixed\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[runtime-status] [784] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"13.4.0\",\"resolution\":\"C:\\\\Users\\\\quiro\\\\nexus-chat-fixed\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2025-06-13T18:15:21.561Z] [runtime-status] [784] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.3.2","resolution":"C:\\Users\\quiro\\nexus-chat-fixed\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[runtime-status] [784] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"C:\\\\Users\\\\quiro\\\\nexus-chat-fixed\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2025-06-13T18:15:21.561Z] [runtime-status] [784] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"13.4.0","resolution":"C:\\Users\\quiro\\nexus-chat-fixed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[runtime-status] [784] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"13.4.0\",\"resolution\":\"C:\\\\Users\\\\quiro\\\\nexus-chat-fixed\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2025-06-13T18:15:21.597Z] [runtime-status] [784] Functions runtime initialized. {"cwd":"C:\\Users\\quiro\\nexus-chat-fixed\\functions","node_version":"22.14.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[runtime-status] [784] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\quiro\\\\nexus-chat-fixed\\\\functions\",\"node_version\":\"22.14.0\"}"}}
+[debug] [2025-06-13T18:15:21.598Z] [runtime-status] [784] Listening to port: \\?\pipe\fire_emu_7f665a5554e81bd4 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[runtime-status] [784] Listening to port: \\\\?\\pipe\\fire_emu_7f665a5554e81bd4"}}
+[debug] [2025-06-13T18:15:21.654Z] [worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: IDLE"}}
+[debug] [2025-06-13T18:15:21.654Z] [worker-pool] submitRequest(triggerId=us-central1-chatWithNexus) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-chatWithNexus)"}}
+[info] i  functions: Beginning execution of "us-central1-chatWithNexus" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Beginning execution of \"us-central1-chatWithNexus\""}}
+[debug] [2025-06-13T18:15:21.655Z] [worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: BUSY"}}
+[debug] [2025-06-13T18:15:24.188Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-chatWithNexus" in 2534.0359ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finished \"us-central1-chatWithNexus\" in 2534.0359ms"}}
+[debug] [2025-06-13T18:15:24.189Z] [worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: IDLE"}}
+[debug] [2025-06-13T18:15:24.189Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-06-13T18:15:24.190Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-06-13T18:15:24.190Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-13T18:22:30.283Z] [work-queue] {"queuedWork":["/nexus-hostel-app/us-central1/chatWithNexus-2025-06-13T18:22:30.283Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-13T18:22:30.283Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/nexus-hostel-app/us-central1/chatWithNexus-2025-06-13T18:22:30.283Z"],"workRunningCount":1}
+[debug] [2025-06-13T18:22:30.283Z] Accepted request OPTIONS /nexus-hostel-app/us-central1/chatWithNexus --> us-central1-chatWithNexus
+[debug] [2025-06-13T18:22:30.285Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-06-13T18:22:30.285Z] [functions] Got req.url=/nexus-hostel-app/us-central1/chatWithNexus, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/nexus-hostel-app/us-central1/chatWithNexus, mapping to path=/"}}
+[debug] [2025-06-13T18:22:30.286Z] [worker-pool] submitRequest(triggerId=us-central1-chatWithNexus) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-chatWithNexus)"}}
+[info] i  functions: Beginning execution of "us-central1-chatWithNexus" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Beginning execution of \"us-central1-chatWithNexus\""}}
+[debug] [2025-06-13T18:22:30.286Z] [worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: BUSY"}}
+[debug] [2025-06-13T18:22:30.289Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-chatWithNexus" in 2.9198ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finished \"us-central1-chatWithNexus\" in 2.9198ms"}}
+[debug] [2025-06-13T18:22:30.289Z] [worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: IDLE"}}
+[debug] [2025-06-13T18:22:30.289Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-06-13T18:22:30.289Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-06-13T18:22:30.289Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-13T18:22:30.290Z] [work-queue] {"queuedWork":["/nexus-hostel-app/us-central1/chatWithNexus-2025-06-13T18:22:30.290Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-13T18:22:30.290Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/nexus-hostel-app/us-central1/chatWithNexus-2025-06-13T18:22:30.290Z"],"workRunningCount":1}
+[debug] [2025-06-13T18:22:30.290Z] Accepted request POST /nexus-hostel-app/us-central1/chatWithNexus --> us-central1-chatWithNexus
+[debug] [2025-06-13T18:22:30.292Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-06-13T18:22:30.292Z] [functions] Got req.url=/nexus-hostel-app/us-central1/chatWithNexus, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/nexus-hostel-app/us-central1/chatWithNexus, mapping to path=/"}}
+[debug] [2025-06-13T18:22:30.292Z] [worker-pool] submitRequest(triggerId=us-central1-chatWithNexus) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-chatWithNexus)"}}
+[info] i  functions: Beginning execution of "us-central1-chatWithNexus" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Beginning execution of \"us-central1-chatWithNexus\""}}
+[debug] [2025-06-13T18:22:30.292Z] [worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: BUSY"}}
+[debug] [2025-06-13T18:22:32.373Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-chatWithNexus" in 2080.9884ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finished \"us-central1-chatWithNexus\" in 2080.9884ms"}}
+[debug] [2025-06-13T18:22:32.373Z] [worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: IDLE"}}
+[debug] [2025-06-13T18:22:32.374Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-06-13T18:22:32.374Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-06-13T18:22:32.374Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-13T18:23:09.883Z] [work-queue] {"queuedWork":["/nexus-hostel-app/us-central1/chatWithNexus-2025-06-13T18:23:09.883Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-13T18:23:09.883Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/nexus-hostel-app/us-central1/chatWithNexus-2025-06-13T18:23:09.883Z"],"workRunningCount":1}
+[debug] [2025-06-13T18:23:09.883Z] Accepted request OPTIONS /nexus-hostel-app/us-central1/chatWithNexus --> us-central1-chatWithNexus
+[debug] [2025-06-13T18:23:09.885Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-06-13T18:23:09.885Z] [functions] Got req.url=/nexus-hostel-app/us-central1/chatWithNexus, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/nexus-hostel-app/us-central1/chatWithNexus, mapping to path=/"}}
+[debug] [2025-06-13T18:23:09.885Z] [worker-pool] submitRequest(triggerId=us-central1-chatWithNexus) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-chatWithNexus)"}}
+[info] i  functions: Beginning execution of "us-central1-chatWithNexus" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Beginning execution of \"us-central1-chatWithNexus\""}}
+[debug] [2025-06-13T18:23:09.886Z] [worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: BUSY"}}
+[debug] [2025-06-13T18:23:09.888Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-chatWithNexus" in 1.9403ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finished \"us-central1-chatWithNexus\" in 1.9403ms"}}
+[debug] [2025-06-13T18:23:09.888Z] [worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: IDLE"}}
+[debug] [2025-06-13T18:23:09.888Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-06-13T18:23:09.888Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-06-13T18:23:09.888Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-13T18:23:09.889Z] [work-queue] {"queuedWork":["/nexus-hostel-app/us-central1/chatWithNexus-2025-06-13T18:23:09.889Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-13T18:23:09.889Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/nexus-hostel-app/us-central1/chatWithNexus-2025-06-13T18:23:09.889Z"],"workRunningCount":1}
+[debug] [2025-06-13T18:23:09.889Z] Accepted request POST /nexus-hostel-app/us-central1/chatWithNexus --> us-central1-chatWithNexus
+[debug] [2025-06-13T18:23:09.891Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-06-13T18:23:09.891Z] [functions] Got req.url=/nexus-hostel-app/us-central1/chatWithNexus, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/nexus-hostel-app/us-central1/chatWithNexus, mapping to path=/"}}
+[debug] [2025-06-13T18:23:09.891Z] [worker-pool] submitRequest(triggerId=us-central1-chatWithNexus) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-chatWithNexus)"}}
+[info] i  functions: Beginning execution of "us-central1-chatWithNexus" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Beginning execution of \"us-central1-chatWithNexus\""}}
+[debug] [2025-06-13T18:23:09.891Z] [worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: BUSY"}}
+[debug] [2025-06-13T18:23:12.280Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-chatWithNexus" in 2389.1695ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finished \"us-central1-chatWithNexus\" in 2389.1695ms"}}
+[debug] [2025-06-13T18:23:12.282Z] [worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: IDLE"}}
+[debug] [2025-06-13T18:23:12.282Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-06-13T18:23:12.282Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-06-13T18:23:12.282Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-13T18:23:31.290Z] [work-queue] {"queuedWork":["/nexus-hostel-app/us-central1/chatWithNexus-2025-06-13T18:23:31.290Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-13T18:23:31.291Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/nexus-hostel-app/us-central1/chatWithNexus-2025-06-13T18:23:31.290Z"],"workRunningCount":1}
+[debug] [2025-06-13T18:23:31.291Z] Accepted request OPTIONS /nexus-hostel-app/us-central1/chatWithNexus --> us-central1-chatWithNexus
+[debug] [2025-06-13T18:23:31.293Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-06-13T18:23:31.293Z] [functions] Got req.url=/nexus-hostel-app/us-central1/chatWithNexus, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/nexus-hostel-app/us-central1/chatWithNexus, mapping to path=/"}}
+[debug] [2025-06-13T18:23:31.293Z] [worker-pool] submitRequest(triggerId=us-central1-chatWithNexus) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-chatWithNexus)"}}
+[info] i  functions: Beginning execution of "us-central1-chatWithNexus" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Beginning execution of \"us-central1-chatWithNexus\""}}
+[debug] [2025-06-13T18:23:31.294Z] [worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: BUSY"}}
+[debug] [2025-06-13T18:23:31.296Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-chatWithNexus" in 2.5218ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finished \"us-central1-chatWithNexus\" in 2.5218ms"}}
+[debug] [2025-06-13T18:23:31.297Z] [worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: IDLE"}}
+[debug] [2025-06-13T18:23:31.297Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-06-13T18:23:31.297Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-06-13T18:23:31.297Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-13T18:23:31.298Z] [work-queue] {"queuedWork":["/nexus-hostel-app/us-central1/chatWithNexus-2025-06-13T18:23:31.297Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-13T18:23:31.298Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/nexus-hostel-app/us-central1/chatWithNexus-2025-06-13T18:23:31.297Z"],"workRunningCount":1}
+[debug] [2025-06-13T18:23:31.298Z] Accepted request POST /nexus-hostel-app/us-central1/chatWithNexus --> us-central1-chatWithNexus
+[debug] [2025-06-13T18:23:31.300Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-06-13T18:23:31.300Z] [functions] Got req.url=/nexus-hostel-app/us-central1/chatWithNexus, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/nexus-hostel-app/us-central1/chatWithNexus, mapping to path=/"}}
+[debug] [2025-06-13T18:23:31.300Z] [worker-pool] submitRequest(triggerId=us-central1-chatWithNexus) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-chatWithNexus)"}}
+[info] i  functions: Beginning execution of "us-central1-chatWithNexus" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Beginning execution of \"us-central1-chatWithNexus\""}}
+[debug] [2025-06-13T18:23:31.300Z] [worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: BUSY"}}
+[debug] [2025-06-13T18:23:33.494Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-chatWithNexus" in 2194.4762ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finished \"us-central1-chatWithNexus\" in 2194.4762ms"}}
+[debug] [2025-06-13T18:23:33.495Z] [worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: IDLE"}}
+[debug] [2025-06-13T18:23:33.495Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-06-13T18:23:33.495Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-06-13T18:23:33.495Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-13T18:23:56.797Z] [work-queue] {"queuedWork":["/nexus-hostel-app/us-central1/chatWithNexus-2025-06-13T18:23:56.797Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-13T18:23:56.797Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/nexus-hostel-app/us-central1/chatWithNexus-2025-06-13T18:23:56.797Z"],"workRunningCount":1}
+[debug] [2025-06-13T18:23:56.797Z] Accepted request OPTIONS /nexus-hostel-app/us-central1/chatWithNexus --> us-central1-chatWithNexus
+[debug] [2025-06-13T18:23:56.799Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-06-13T18:23:56.800Z] [functions] Got req.url=/nexus-hostel-app/us-central1/chatWithNexus, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/nexus-hostel-app/us-central1/chatWithNexus, mapping to path=/"}}
+[debug] [2025-06-13T18:23:56.800Z] [worker-pool] submitRequest(triggerId=us-central1-chatWithNexus) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-chatWithNexus)"}}
+[info] i  functions: Beginning execution of "us-central1-chatWithNexus" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Beginning execution of \"us-central1-chatWithNexus\""}}
+[debug] [2025-06-13T18:23:56.800Z] [worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: BUSY"}}
+[debug] [2025-06-13T18:23:56.802Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-chatWithNexus" in 2.3182ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finished \"us-central1-chatWithNexus\" in 2.3182ms"}}
+[debug] [2025-06-13T18:23:56.803Z] [worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: IDLE"}}
+[debug] [2025-06-13T18:23:56.803Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-06-13T18:23:56.803Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-06-13T18:23:56.803Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-13T18:23:56.804Z] [work-queue] {"queuedWork":["/nexus-hostel-app/us-central1/chatWithNexus-2025-06-13T18:23:56.804Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-13T18:23:56.804Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/nexus-hostel-app/us-central1/chatWithNexus-2025-06-13T18:23:56.804Z"],"workRunningCount":1}
+[debug] [2025-06-13T18:23:56.804Z] Accepted request POST /nexus-hostel-app/us-central1/chatWithNexus --> us-central1-chatWithNexus
+[debug] [2025-06-13T18:23:56.806Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-06-13T18:23:56.806Z] [functions] Got req.url=/nexus-hostel-app/us-central1/chatWithNexus, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/nexus-hostel-app/us-central1/chatWithNexus, mapping to path=/"}}
+[debug] [2025-06-13T18:23:56.806Z] [worker-pool] submitRequest(triggerId=us-central1-chatWithNexus) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-chatWithNexus)"}}
+[info] i  functions: Beginning execution of "us-central1-chatWithNexus" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Beginning execution of \"us-central1-chatWithNexus\""}}
+[debug] [2025-06-13T18:23:56.807Z] [worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: BUSY"}}
+[debug] [2025-06-13T18:24:00.586Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-chatWithNexus" in 3779.1994999999997ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finished \"us-central1-chatWithNexus\" in 3779.1994999999997ms"}}
+[debug] [2025-06-13T18:24:00.586Z] [worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: IDLE"}}
+[debug] [2025-06-13T18:24:00.586Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-06-13T18:24:00.586Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-06-13T18:24:00.587Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-13T18:24:25.494Z] [work-queue] {"queuedWork":["/nexus-hostel-app/us-central1/chatWithNexus-2025-06-13T18:24:25.494Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-13T18:24:25.495Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/nexus-hostel-app/us-central1/chatWithNexus-2025-06-13T18:24:25.494Z"],"workRunningCount":1}
+[debug] [2025-06-13T18:24:25.495Z] Accepted request OPTIONS /nexus-hostel-app/us-central1/chatWithNexus --> us-central1-chatWithNexus
+[debug] [2025-06-13T18:24:25.496Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-06-13T18:24:25.497Z] [functions] Got req.url=/nexus-hostel-app/us-central1/chatWithNexus, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/nexus-hostel-app/us-central1/chatWithNexus, mapping to path=/"}}
+[debug] [2025-06-13T18:24:25.497Z] [worker-pool] submitRequest(triggerId=us-central1-chatWithNexus) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-chatWithNexus)"}}
+[info] i  functions: Beginning execution of "us-central1-chatWithNexus" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Beginning execution of \"us-central1-chatWithNexus\""}}
+[debug] [2025-06-13T18:24:25.497Z] [worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: BUSY"}}
+[debug] [2025-06-13T18:24:25.499Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-chatWithNexus" in 2.0668ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finished \"us-central1-chatWithNexus\" in 2.0668ms"}}
+[debug] [2025-06-13T18:24:25.499Z] [worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: IDLE"}}
+[debug] [2025-06-13T18:24:25.500Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-06-13T18:24:25.500Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-06-13T18:24:25.500Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-13T18:24:25.501Z] [work-queue] {"queuedWork":["/nexus-hostel-app/us-central1/chatWithNexus-2025-06-13T18:24:25.501Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-13T18:24:25.501Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/nexus-hostel-app/us-central1/chatWithNexus-2025-06-13T18:24:25.501Z"],"workRunningCount":1}
+[debug] [2025-06-13T18:24:25.501Z] Accepted request POST /nexus-hostel-app/us-central1/chatWithNexus --> us-central1-chatWithNexus
+[debug] [2025-06-13T18:24:25.503Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-06-13T18:24:25.503Z] [functions] Got req.url=/nexus-hostel-app/us-central1/chatWithNexus, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/nexus-hostel-app/us-central1/chatWithNexus, mapping to path=/"}}
+[debug] [2025-06-13T18:24:25.503Z] [worker-pool] submitRequest(triggerId=us-central1-chatWithNexus) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-chatWithNexus)"}}
+[info] i  functions: Beginning execution of "us-central1-chatWithNexus" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Beginning execution of \"us-central1-chatWithNexus\""}}
+[debug] [2025-06-13T18:24:25.503Z] [worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: BUSY"}}
+[debug] [2025-06-13T18:24:30.083Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-chatWithNexus" in 4580.2342ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finished \"us-central1-chatWithNexus\" in 4580.2342ms"}}
+[debug] [2025-06-13T18:24:30.084Z] [worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: IDLE"}}
+[debug] [2025-06-13T18:24:30.084Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-06-13T18:24:30.084Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-06-13T18:24:30.084Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-13T18:24:56.300Z] [work-queue] {"queuedWork":["/nexus-hostel-app/us-central1/chatWithNexus-2025-06-13T18:24:56.300Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-13T18:24:56.300Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/nexus-hostel-app/us-central1/chatWithNexus-2025-06-13T18:24:56.300Z"],"workRunningCount":1}
+[debug] [2025-06-13T18:24:56.300Z] Accepted request OPTIONS /nexus-hostel-app/us-central1/chatWithNexus --> us-central1-chatWithNexus
+[debug] [2025-06-13T18:24:56.302Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-06-13T18:24:56.302Z] [functions] Got req.url=/nexus-hostel-app/us-central1/chatWithNexus, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/nexus-hostel-app/us-central1/chatWithNexus, mapping to path=/"}}
+[debug] [2025-06-13T18:24:56.302Z] [worker-pool] submitRequest(triggerId=us-central1-chatWithNexus) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-chatWithNexus)"}}
+[info] i  functions: Beginning execution of "us-central1-chatWithNexus" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Beginning execution of \"us-central1-chatWithNexus\""}}
+[debug] [2025-06-13T18:24:56.302Z] [worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: BUSY"}}
+[debug] [2025-06-13T18:24:56.304Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-chatWithNexus" in 1.7895ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finished \"us-central1-chatWithNexus\" in 1.7895ms"}}
+[debug] [2025-06-13T18:24:56.304Z] [worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: IDLE"}}
+[debug] [2025-06-13T18:24:56.304Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-06-13T18:24:56.305Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-06-13T18:24:56.305Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-13T18:24:56.306Z] [work-queue] {"queuedWork":["/nexus-hostel-app/us-central1/chatWithNexus-2025-06-13T18:24:56.306Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-13T18:24:56.306Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/nexus-hostel-app/us-central1/chatWithNexus-2025-06-13T18:24:56.306Z"],"workRunningCount":1}
+[debug] [2025-06-13T18:24:56.306Z] Accepted request POST /nexus-hostel-app/us-central1/chatWithNexus --> us-central1-chatWithNexus
+[debug] [2025-06-13T18:24:56.308Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-06-13T18:24:56.308Z] [functions] Got req.url=/nexus-hostel-app/us-central1/chatWithNexus, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/nexus-hostel-app/us-central1/chatWithNexus, mapping to path=/"}}
+[debug] [2025-06-13T18:24:56.308Z] [worker-pool] submitRequest(triggerId=us-central1-chatWithNexus) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-chatWithNexus)"}}
+[info] i  functions: Beginning execution of "us-central1-chatWithNexus" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Beginning execution of \"us-central1-chatWithNexus\""}}
+[debug] [2025-06-13T18:24:56.309Z] [worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: BUSY"}}
+[debug] [2025-06-13T18:24:57.562Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-chatWithNexus" in 1253.853ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finished \"us-central1-chatWithNexus\" in 1253.853ms"}}
+[debug] [2025-06-13T18:24:57.563Z] [worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: IDLE"}}
+[debug] [2025-06-13T18:24:57.563Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-06-13T18:24:57.563Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-06-13T18:24:57.563Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-13T18:25:20.801Z] [work-queue] {"queuedWork":["/nexus-hostel-app/us-central1/chatWithNexus-2025-06-13T18:25:20.801Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-13T18:25:20.801Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/nexus-hostel-app/us-central1/chatWithNexus-2025-06-13T18:25:20.801Z"],"workRunningCount":1}
+[debug] [2025-06-13T18:25:20.801Z] Accepted request OPTIONS /nexus-hostel-app/us-central1/chatWithNexus --> us-central1-chatWithNexus
+[debug] [2025-06-13T18:25:20.803Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-06-13T18:25:20.803Z] [functions] Got req.url=/nexus-hostel-app/us-central1/chatWithNexus, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/nexus-hostel-app/us-central1/chatWithNexus, mapping to path=/"}}
+[debug] [2025-06-13T18:25:20.803Z] [worker-pool] submitRequest(triggerId=us-central1-chatWithNexus) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-chatWithNexus)"}}
+[info] i  functions: Beginning execution of "us-central1-chatWithNexus" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Beginning execution of \"us-central1-chatWithNexus\""}}
+[debug] [2025-06-13T18:25:20.804Z] [worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: BUSY"}}
+[debug] [2025-06-13T18:25:20.806Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-chatWithNexus" in 1.8749ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finished \"us-central1-chatWithNexus\" in 1.8749ms"}}
+[debug] [2025-06-13T18:25:20.806Z] [worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: IDLE"}}
+[debug] [2025-06-13T18:25:20.806Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-06-13T18:25:20.806Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-06-13T18:25:20.806Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-13T18:25:20.807Z] [work-queue] {"queuedWork":["/nexus-hostel-app/us-central1/chatWithNexus-2025-06-13T18:25:20.807Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-13T18:25:20.807Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/nexus-hostel-app/us-central1/chatWithNexus-2025-06-13T18:25:20.807Z"],"workRunningCount":1}
+[debug] [2025-06-13T18:25:20.807Z] Accepted request POST /nexus-hostel-app/us-central1/chatWithNexus --> us-central1-chatWithNexus
+[debug] [2025-06-13T18:25:20.809Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-06-13T18:25:20.809Z] [functions] Got req.url=/nexus-hostel-app/us-central1/chatWithNexus, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/nexus-hostel-app/us-central1/chatWithNexus, mapping to path=/"}}
+[debug] [2025-06-13T18:25:20.809Z] [worker-pool] submitRequest(triggerId=us-central1-chatWithNexus) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-chatWithNexus)"}}
+[info] i  functions: Beginning execution of "us-central1-chatWithNexus" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Beginning execution of \"us-central1-chatWithNexus\""}}
+[debug] [2025-06-13T18:25:20.810Z] [worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: BUSY"}}
+[debug] [2025-06-13T18:25:23.901Z] [work-queue] {"queuedWork":["/nexus-hostel-app/us-central1/chatWithNexus-2025-06-13T18:25:23.901Z"],"queueLength":1,"runningWork":["/nexus-hostel-app/us-central1/chatWithNexus-2025-06-13T18:25:20.807Z"],"workRunningCount":1}
+[debug] [2025-06-13T18:25:23.902Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/nexus-hostel-app/us-central1/chatWithNexus-2025-06-13T18:25:20.807Z","/nexus-hostel-app/us-central1/chatWithNexus-2025-06-13T18:25:23.901Z"],"workRunningCount":2}
+[debug] [2025-06-13T18:25:23.902Z] Accepted request POST /nexus-hostel-app/us-central1/chatWithNexus --> us-central1-chatWithNexus
+[debug] [2025-06-13T18:25:23.902Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-06-13T18:25:23.902Z] [functions] Got req.url=/nexus-hostel-app/us-central1/chatWithNexus, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/nexus-hostel-app/us-central1/chatWithNexus, mapping to path=/"}}
+[info] i  functions: Trying to access secret OPENAI_KEY@latest {"metadata":{"emulator":{"name":"functions"},"message":"Trying to access secret OPENAI_KEY@latest"}}
+[debug] [2025-06-13T18:25:23.903Z] Checked if tokens are valid: true, expires at: 1749842024838
+[debug] [2025-06-13T18:25:23.903Z] Checked if tokens are valid: true, expires at: 1749842024838
+[debug] [2025-06-13T18:25:23.904Z] >>> [apiv2][query] GET https://secretmanager.googleapis.com/v1/projects/nexus-hostel-app/secrets/OPENAI_KEY/versions/latest:access [none]
+[debug] [2025-06-13T18:25:24.408Z] <<< [apiv2][status] GET https://secretmanager.googleapis.com/v1/projects/nexus-hostel-app/secrets/OPENAI_KEY/versions/latest:access 200
+[debug] [2025-06-13T18:25:24.408Z] <<< [apiv2][body] GET https://secretmanager.googleapis.com/v1/projects/nexus-hostel-app/secrets/OPENAI_KEY/versions/latest:access {"name":"projects/699025223968/secrets/OPENAI_KEY/versions/2","payload":{"data":"c2stcHJvai1FS3hMdG93NzVnZ01jb3dxclVaUHJBaVdxNzRCWEsyWlo3VDlkdEIwR0lHb0pNY3Mza25rNkExZDZFMjNiREpVQ1BLaWZFSU9NeFQzQmxia0ZKMVRfTXJjTmh0ZlprZlk5VTlHNGJUSGdTby1OXzYxdnJUeW1XUzZrM016ckVlZTJ5NE80R3ZiTUpyV2ktUDNjS1p6UXNiZ0drZ0E=","dataCrc32c":"3869055625"}}
+[debug] [2025-06-13T18:25:24.413Z] [worker-pool] addWorker(us-central1-chatWithNexus) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-chatWithNexus)"}}
+[debug] [2025-06-13T18:25:24.413Z] [worker-pool] Adding worker with key us-central1-chatWithNexus, total=2 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-chatWithNexus, total=2"}}
+[debug] [2025-06-13T18:25:24.474Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-chatWithNexus" in 3664.5987999999998ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finished \"us-central1-chatWithNexus\" in 3664.5987999999998ms"}}
+[debug] [2025-06-13T18:25:24.474Z] [worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: IDLE"}}
+[debug] [2025-06-13T18:25:24.475Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-06-13T18:25:24.475Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-06-13T18:25:24.475Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/nexus-hostel-app/us-central1/chatWithNexus-2025-06-13T18:25:23.901Z"],"workRunningCount":1}
+[debug] [2025-06-13T18:25:25.242Z] [runtime-status] [22492] Resolved module firebase-admin {"declared":true,"installed":true,"version":"13.4.0","resolution":"C:\\Users\\quiro\\nexus-chat-fixed\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[runtime-status] [22492] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"13.4.0\",\"resolution\":\"C:\\\\Users\\\\quiro\\\\nexus-chat-fixed\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2025-06-13T18:25:25.243Z] [runtime-status] [22492] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.3.2","resolution":"C:\\Users\\quiro\\nexus-chat-fixed\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[runtime-status] [22492] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"C:\\\\Users\\\\quiro\\\\nexus-chat-fixed\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2025-06-13T18:25:25.244Z] [runtime-status] [22492] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[runtime-status] [22492] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2025-06-13T18:25:25.244Z] [runtime-status] [22492] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.3.2","resolution":"C:\\Users\\quiro\\nexus-chat-fixed\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[runtime-status] [22492] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"C:\\\\Users\\\\quiro\\\\nexus-chat-fixed\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2025-06-13T18:25:25.531Z] [runtime-status] [22492] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[runtime-status] [22492] Checked functions.config() {\"config\":{}}"}}
+[debug] [2025-06-13T18:25:25.531Z] [runtime-status] [22492] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"6.3.2","resolution":"C:\\Users\\quiro\\nexus-chat-fixed\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[runtime-status] [22492] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"C:\\\\Users\\\\quiro\\\\nexus-chat-fixed\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}}"}}
+[debug] [2025-06-13T18:25:25.531Z] [runtime-status] [22492] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.3.2","resolution":"C:\\Users\\quiro\\nexus-chat-fixed\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[runtime-status] [22492] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"C:\\\\Users\\\\quiro\\\\nexus-chat-fixed\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2025-06-13T18:25:25.535Z] [runtime-status] [22492] Resolved module firebase-admin {"declared":true,"installed":true,"version":"13.4.0","resolution":"C:\\Users\\quiro\\nexus-chat-fixed\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[runtime-status] [22492] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"13.4.0\",\"resolution\":\"C:\\\\Users\\\\quiro\\\\nexus-chat-fixed\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2025-06-13T18:25:25.536Z] [runtime-status] [22492] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.3.2","resolution":"C:\\Users\\quiro\\nexus-chat-fixed\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[runtime-status] [22492] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"C:\\\\Users\\\\quiro\\\\nexus-chat-fixed\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2025-06-13T18:25:25.537Z] [runtime-status] [22492] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"13.4.0","resolution":"C:\\Users\\quiro\\nexus-chat-fixed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[runtime-status] [22492] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"13.4.0\",\"resolution\":\"C:\\\\Users\\\\quiro\\\\nexus-chat-fixed\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2025-06-13T18:25:25.572Z] [runtime-status] [22492] Functions runtime initialized. {"cwd":"C:\\Users\\quiro\\nexus-chat-fixed\\functions","node_version":"22.14.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[runtime-status] [22492] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\quiro\\\\nexus-chat-fixed\\\\functions\",\"node_version\":\"22.14.0\"}"}}
+[debug] [2025-06-13T18:25:25.573Z] [runtime-status] [22492] Listening to port: \\?\pipe\fire_emu_87c3585cf82eccc1 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[runtime-status] [22492] Listening to port: \\\\?\\pipe\\fire_emu_87c3585cf82eccc1"}}
+[debug] [2025-06-13T18:25:25.624Z] [worker-us-central1-chatWithNexus-f347b1e2-6b89-4805-b8e2-6708213e05a3]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-f347b1e2-6b89-4805-b8e2-6708213e05a3]: IDLE"}}
+[debug] [2025-06-13T18:25:25.624Z] [worker-pool] submitRequest(triggerId=us-central1-chatWithNexus) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-chatWithNexus)"}}
+[info] i  functions: Beginning execution of "us-central1-chatWithNexus" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Beginning execution of \"us-central1-chatWithNexus\""}}
+[debug] [2025-06-13T18:25:25.624Z] [worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: BUSY"}}
+[debug] [2025-06-13T18:25:29.957Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-chatWithNexus" in 4332.5138ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finished \"us-central1-chatWithNexus\" in 4332.5138ms"}}
+[debug] [2025-06-13T18:25:29.957Z] [worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: IDLE"}}
+[debug] [2025-06-13T18:25:29.958Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-06-13T18:25:29.958Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-06-13T18:25:29.958Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-13T18:27:41.210Z] [work-queue] {"queuedWork":["/nexus-hostel-app/us-central1/chatWithNexus-2025-06-13T18:27:41.210Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-13T18:27:41.210Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/nexus-hostel-app/us-central1/chatWithNexus-2025-06-13T18:27:41.210Z"],"workRunningCount":1}
+[debug] [2025-06-13T18:27:41.210Z] Accepted request OPTIONS /nexus-hostel-app/us-central1/chatWithNexus --> us-central1-chatWithNexus
+[debug] [2025-06-13T18:27:41.212Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-06-13T18:27:41.213Z] [functions] Got req.url=/nexus-hostel-app/us-central1/chatWithNexus, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/nexus-hostel-app/us-central1/chatWithNexus, mapping to path=/"}}
+[debug] [2025-06-13T18:27:41.213Z] [worker-pool] submitRequest(triggerId=us-central1-chatWithNexus) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-chatWithNexus)"}}
+[info] i  functions: Beginning execution of "us-central1-chatWithNexus" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Beginning execution of \"us-central1-chatWithNexus\""}}
+[debug] [2025-06-13T18:27:41.213Z] [worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: BUSY"}}
+[debug] [2025-06-13T18:27:41.215Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-chatWithNexus" in 1.9824ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finished \"us-central1-chatWithNexus\" in 1.9824ms"}}
+[debug] [2025-06-13T18:27:41.215Z] [worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: IDLE"}}
+[debug] [2025-06-13T18:27:41.216Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-06-13T18:27:41.216Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-06-13T18:27:41.216Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-13T18:27:41.216Z] [work-queue] {"queuedWork":["/nexus-hostel-app/us-central1/chatWithNexus-2025-06-13T18:27:41.216Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-13T18:27:41.216Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/nexus-hostel-app/us-central1/chatWithNexus-2025-06-13T18:27:41.216Z"],"workRunningCount":1}
+[debug] [2025-06-13T18:27:41.216Z] Accepted request POST /nexus-hostel-app/us-central1/chatWithNexus --> us-central1-chatWithNexus
+[debug] [2025-06-13T18:27:41.218Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-06-13T18:27:41.218Z] [functions] Got req.url=/nexus-hostel-app/us-central1/chatWithNexus, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/nexus-hostel-app/us-central1/chatWithNexus, mapping to path=/"}}
+[debug] [2025-06-13T18:27:41.218Z] [worker-pool] submitRequest(triggerId=us-central1-chatWithNexus) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-chatWithNexus)"}}
+[info] i  functions: Beginning execution of "us-central1-chatWithNexus" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Beginning execution of \"us-central1-chatWithNexus\""}}
+[debug] [2025-06-13T18:27:41.219Z] [worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: BUSY"}}
+[debug] [2025-06-13T18:27:43.050Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-chatWithNexus" in 1831.6381000000001ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finished \"us-central1-chatWithNexus\" in 1831.6381000000001ms"}}
+[debug] [2025-06-13T18:27:43.051Z] [worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: IDLE"}}
+[debug] [2025-06-13T18:27:43.051Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-06-13T18:27:43.051Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-06-13T18:27:43.051Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-13T18:38:22.546Z] File C:\Users\quiro\nexus-chat-fixed\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\quiro\\nexus-chat-fixed\\functions\\index.js changed, reloading triggers"}}
+[debug] [2025-06-13T18:38:23.551Z] Validating nodejs source
+[debug] [2025-06-13T18:38:24.214Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "echo \"Skipping lint\"",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^1.9.0",
+    "firebase-admin": "^13.4.0",
+    "firebase-functions": "^6.3.2"
+  },
+  "private": true
+}
+[debug] [2025-06-13T18:38:24.214Z] Building nodejs source
+[debug] [2025-06-13T18:38:24.214Z] Failed to find version of module node: reached end of search path C:\Users\quiro\nexus-chat-fixed\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-06-13T18:38:24.215Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-06-13T18:38:24.219Z] Found firebase-functions binary at 'C:\Users\quiro\nexus-chat-fixed\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8575
+
+[debug] [2025-06-13T18:38:24.607Z] Got response from /__/functions.yaml {"endpoints":{"chatWithNexus":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["us-central1"],"secretEnvironmentVariables":[{"key":"OPENAI_KEY"}],"labels":{},"httpsTrigger":{},"entryPoint":"chatWithNexus"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{},"params":[{"type":"secret","name":"OPENAI_KEY"}]}
+[info] +  functions: Loaded functions definitions from source: chatWithNexus. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: chatWithNexus."}}
+[debug] [2025-06-13T18:38:28.634Z] [worker-pool] Shutting down IDLE worker (us-central1-chatWithNexus) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-chatWithNexus)"}}
+[debug] [2025-06-13T18:38:28.634Z] [worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: FINISHING"}}
+[debug] [2025-06-13T18:38:28.634Z] [worker-pool] Shutting down IDLE worker (us-central1-chatWithNexus) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-chatWithNexus)"}}
+[debug] [2025-06-13T18:38:28.634Z] [worker-us-central1-chatWithNexus-f347b1e2-6b89-4805-b8e2-6708213e05a3]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-f347b1e2-6b89-4805-b8e2-6708213e05a3]: FINISHING"}}
+[debug] [2025-06-13T18:38:28.642Z] [worker-us-central1-chatWithNexus-f347b1e2-6b89-4805-b8e2-6708213e05a3]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-f347b1e2-6b89-4805-b8e2-6708213e05a3]: exited"}}
+[debug] [2025-06-13T18:38:28.642Z] [worker-us-central1-chatWithNexus-f347b1e2-6b89-4805-b8e2-6708213e05a3]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-f347b1e2-6b89-4805-b8e2-6708213e05a3]: FINISHED"}}
+[debug] [2025-06-13T18:38:28.642Z] [worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: exited"}}
+[debug] [2025-06-13T18:38:28.643Z] [worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-fdd049f3-3389-467c-9b60-91264a54106e]: FINISHED"}}
+[debug] [2025-06-13T18:38:43.555Z] [work-queue] {"queuedWork":["/nexus-hostel-app/us-central1/chatWithNexus-2025-06-13T18:38:43.555Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-13T18:38:43.555Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/nexus-hostel-app/us-central1/chatWithNexus-2025-06-13T18:38:43.555Z"],"workRunningCount":1}
+[debug] [2025-06-13T18:38:43.555Z] Accepted request OPTIONS /nexus-hostel-app/us-central1/chatWithNexus --> us-central1-chatWithNexus
+[debug] [2025-06-13T18:38:43.557Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-06-13T18:38:43.557Z] [functions] Got req.url=/nexus-hostel-app/us-central1/chatWithNexus, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/nexus-hostel-app/us-central1/chatWithNexus, mapping to path=/"}}
+[debug] [2025-06-13T18:38:43.557Z] [worker-pool] Cleaned up workers for us-central1-chatWithNexus: 2 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-chatWithNexus: 2 --> 0"}}
+[info] i  functions: Trying to access secret OPENAI_KEY@latest {"metadata":{"emulator":{"name":"functions"},"message":"Trying to access secret OPENAI_KEY@latest"}}
+[debug] [2025-06-13T18:38:43.559Z] Checked if tokens are valid: true, expires at: 1749842024838
+[debug] [2025-06-13T18:38:43.559Z] Checked if tokens are valid: true, expires at: 1749842024838
+[debug] [2025-06-13T18:38:43.559Z] >>> [apiv2][query] GET https://secretmanager.googleapis.com/v1/projects/nexus-hostel-app/secrets/OPENAI_KEY/versions/latest:access [none]
+[debug] [2025-06-13T18:38:43.901Z] <<< [apiv2][status] GET https://secretmanager.googleapis.com/v1/projects/nexus-hostel-app/secrets/OPENAI_KEY/versions/latest:access 200
+[debug] [2025-06-13T18:38:43.901Z] <<< [apiv2][body] GET https://secretmanager.googleapis.com/v1/projects/nexus-hostel-app/secrets/OPENAI_KEY/versions/latest:access {"name":"projects/699025223968/secrets/OPENAI_KEY/versions/2","payload":{"data":"c2stcHJvai1FS3hMdG93NzVnZ01jb3dxclVaUHJBaVdxNzRCWEsyWlo3VDlkdEIwR0lHb0pNY3Mza25rNkExZDZFMjNiREpVQ1BLaWZFSU9NeFQzQmxia0ZKMVRfTXJjTmh0ZlprZlk5VTlHNGJUSGdTby1OXzYxdnJUeW1XUzZrM016ckVlZTJ5NE80R3ZiTUpyV2ktUDNjS1p6UXNiZ0drZ0E=","dataCrc32c":"3869055625"}}
+[debug] [2025-06-13T18:38:43.907Z] [worker-pool] addWorker(us-central1-chatWithNexus) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-chatWithNexus)"}}
+[debug] [2025-06-13T18:38:43.907Z] [worker-pool] Adding worker with key us-central1-chatWithNexus, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-chatWithNexus, total=1"}}
+[debug] [2025-06-13T18:38:44.710Z] [runtime-status] [21348] Resolved module firebase-admin {"declared":true,"installed":true,"version":"13.4.0","resolution":"C:\\Users\\quiro\\nexus-chat-fixed\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[runtime-status] [21348] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"13.4.0\",\"resolution\":\"C:\\\\Users\\\\quiro\\\\nexus-chat-fixed\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2025-06-13T18:38:44.711Z] [runtime-status] [21348] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.3.2","resolution":"C:\\Users\\quiro\\nexus-chat-fixed\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[runtime-status] [21348] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"C:\\\\Users\\\\quiro\\\\nexus-chat-fixed\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2025-06-13T18:38:44.711Z] [runtime-status] [21348] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[runtime-status] [21348] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2025-06-13T18:38:44.711Z] [runtime-status] [21348] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.3.2","resolution":"C:\\Users\\quiro\\nexus-chat-fixed\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[runtime-status] [21348] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"C:\\\\Users\\\\quiro\\\\nexus-chat-fixed\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2025-06-13T18:38:44.995Z] [runtime-status] [21348] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[runtime-status] [21348] Checked functions.config() {\"config\":{}}"}}
+[debug] [2025-06-13T18:38:44.995Z] [runtime-status] [21348] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"6.3.2","resolution":"C:\\Users\\quiro\\nexus-chat-fixed\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[runtime-status] [21348] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"C:\\\\Users\\\\quiro\\\\nexus-chat-fixed\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}}"}}
+[debug] [2025-06-13T18:38:44.995Z] [runtime-status] [21348] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.3.2","resolution":"C:\\Users\\quiro\\nexus-chat-fixed\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[runtime-status] [21348] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"C:\\\\Users\\\\quiro\\\\nexus-chat-fixed\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2025-06-13T18:38:44.999Z] [runtime-status] [21348] Resolved module firebase-admin {"declared":true,"installed":true,"version":"13.4.0","resolution":"C:\\Users\\quiro\\nexus-chat-fixed\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[runtime-status] [21348] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"13.4.0\",\"resolution\":\"C:\\\\Users\\\\quiro\\\\nexus-chat-fixed\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2025-06-13T18:38:45.000Z] [runtime-status] [21348] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.3.2","resolution":"C:\\Users\\quiro\\nexus-chat-fixed\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[runtime-status] [21348] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"C:\\\\Users\\\\quiro\\\\nexus-chat-fixed\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2025-06-13T18:38:45.001Z] [runtime-status] [21348] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"13.4.0","resolution":"C:\\Users\\quiro\\nexus-chat-fixed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[runtime-status] [21348] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"13.4.0\",\"resolution\":\"C:\\\\Users\\\\quiro\\\\nexus-chat-fixed\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2025-06-13T18:38:45.037Z] [runtime-status] [21348] Functions runtime initialized. {"cwd":"C:\\Users\\quiro\\nexus-chat-fixed\\functions","node_version":"22.14.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[runtime-status] [21348] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\quiro\\\\nexus-chat-fixed\\\\functions\",\"node_version\":\"22.14.0\"}"}}
+[debug] [2025-06-13T18:38:45.037Z] [runtime-status] [21348] Listening to port: \\?\pipe\fire_emu_9214d6a5d6e6b33a {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[runtime-status] [21348] Listening to port: \\\\?\\pipe\\fire_emu_9214d6a5d6e6b33a"}}
+[debug] [2025-06-13T18:38:45.109Z] [worker-us-central1-chatWithNexus-4f156c9d-0028-4937-94dd-f78eaabc83d5]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-4f156c9d-0028-4937-94dd-f78eaabc83d5]: IDLE"}}
+[debug] [2025-06-13T18:38:45.110Z] [worker-pool] submitRequest(triggerId=us-central1-chatWithNexus) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-chatWithNexus)"}}
+[info] i  functions: Beginning execution of "us-central1-chatWithNexus" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Beginning execution of \"us-central1-chatWithNexus\""}}
+[debug] [2025-06-13T18:38:45.111Z] [worker-us-central1-chatWithNexus-4f156c9d-0028-4937-94dd-f78eaabc83d5]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-4f156c9d-0028-4937-94dd-f78eaabc83d5]: BUSY"}}
+[debug] [2025-06-13T18:38:45.113Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-chatWithNexus" in 2.9587ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finished \"us-central1-chatWithNexus\" in 2.9587ms"}}
+[debug] [2025-06-13T18:38:45.114Z] [worker-us-central1-chatWithNexus-4f156c9d-0028-4937-94dd-f78eaabc83d5]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-4f156c9d-0028-4937-94dd-f78eaabc83d5]: IDLE"}}
+[debug] [2025-06-13T18:38:45.114Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-06-13T18:38:45.114Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-06-13T18:38:45.114Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-13T18:38:45.115Z] [work-queue] {"queuedWork":["/nexus-hostel-app/us-central1/chatWithNexus-2025-06-13T18:38:45.115Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-13T18:38:45.115Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/nexus-hostel-app/us-central1/chatWithNexus-2025-06-13T18:38:45.115Z"],"workRunningCount":1}
+[debug] [2025-06-13T18:38:45.115Z] Accepted request POST /nexus-hostel-app/us-central1/chatWithNexus --> us-central1-chatWithNexus
+[debug] [2025-06-13T18:38:45.115Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-06-13T18:38:45.116Z] [functions] Got req.url=/nexus-hostel-app/us-central1/chatWithNexus, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/nexus-hostel-app/us-central1/chatWithNexus, mapping to path=/"}}
+[debug] [2025-06-13T18:38:45.116Z] [worker-pool] submitRequest(triggerId=us-central1-chatWithNexus) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-chatWithNexus)"}}
+[info] i  functions: Beginning execution of "us-central1-chatWithNexus" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Beginning execution of \"us-central1-chatWithNexus\""}}
+[debug] [2025-06-13T18:38:45.116Z] [worker-us-central1-chatWithNexus-4f156c9d-0028-4937-94dd-f78eaabc83d5]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-4f156c9d-0028-4937-94dd-f78eaabc83d5]: BUSY"}}
+[debug] [2025-06-13T18:38:47.665Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-chatWithNexus" in 2549.1247ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finished \"us-central1-chatWithNexus\" in 2549.1247ms"}}
+[debug] [2025-06-13T18:38:47.665Z] [worker-us-central1-chatWithNexus-4f156c9d-0028-4937-94dd-f78eaabc83d5]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-4f156c9d-0028-4937-94dd-f78eaabc83d5]: IDLE"}}
+[debug] [2025-06-13T18:38:47.665Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-06-13T18:38:47.666Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-06-13T18:38:47.666Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-13T18:39:00.823Z] File C:\Users\quiro\nexus-chat-fixed\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\quiro\\nexus-chat-fixed\\functions\\index.js changed, reloading triggers"}}
+[debug] [2025-06-13T18:39:01.836Z] Validating nodejs source
+[debug] [2025-06-13T18:39:02.468Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "echo \"Skipping lint\"",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^1.9.0",
+    "firebase-admin": "^13.4.0",
+    "firebase-functions": "^6.3.2"
+  },
+  "private": true
+}
+[debug] [2025-06-13T18:39:02.468Z] Building nodejs source
+[debug] [2025-06-13T18:39:02.468Z] Failed to find version of module node: reached end of search path C:\Users\quiro\nexus-chat-fixed\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-06-13T18:39:02.469Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-06-13T18:39:02.474Z] Found firebase-functions binary at 'C:\Users\quiro\nexus-chat-fixed\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8968
+
+[debug] [2025-06-13T18:39:02.850Z] Got response from /__/functions.yaml {"endpoints":{"chatWithNexus":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["us-central1"],"secretEnvironmentVariables":[{"key":"OPENAI_KEY"}],"labels":{},"httpsTrigger":{},"entryPoint":"chatWithNexus"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{},"params":[{"type":"secret","name":"OPENAI_KEY"}]}
+[info] +  functions: Loaded functions definitions from source: chatWithNexus. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: chatWithNexus."}}
+[debug] [2025-06-13T18:39:06.876Z] [worker-pool] Shutting down IDLE worker (us-central1-chatWithNexus) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-chatWithNexus)"}}
+[debug] [2025-06-13T18:39:06.876Z] [worker-us-central1-chatWithNexus-4f156c9d-0028-4937-94dd-f78eaabc83d5]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-4f156c9d-0028-4937-94dd-f78eaabc83d5]: FINISHING"}}
+[debug] [2025-06-13T18:39:06.884Z] [worker-us-central1-chatWithNexus-4f156c9d-0028-4937-94dd-f78eaabc83d5]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-4f156c9d-0028-4937-94dd-f78eaabc83d5]: exited"}}
+[debug] [2025-06-13T18:39:06.884Z] [worker-us-central1-chatWithNexus-4f156c9d-0028-4937-94dd-f78eaabc83d5]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-chatWithNexus"},"extension":{},"message":"[worker-us-central1-chatWithNexus-4f156c9d-0028-4937-94dd-f78eaabc83d5]: FINISHED"}}

@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Personalizaciones adicionales si lo necesitás */
+body {
+  @apply bg-[#d2ddbb] text-[#262626] min-h-screen;
+}
+
+a {
+  @apply text-[#04f9c2] hover:text-[#262626] font-medium;
+}
+
+button {
+  @apply rounded-lg border border-transparent px-4 py-2 text-sm font-medium transition-colors duration-200;
+}
+
+button:hover {
+  @apply border-[#04f9c2];
+}
