@@ -1,10 +1,10 @@
 import { useState, useRef, useEffect } from "react";
 
-export default function NexusChat() {
+export default function NexusChat({ onSelectView }) {
   const [messages, setMessages] = useState([
     {
       sender: "nexus",
-      text: "Hi! I'm Nexus 🧳 Ask me anything about the hostel or the city!",
+      text: "Hi! I'm Nexus 🐶, the friendly mascot of Next House Copenhagen. Ask me anything about the hostel or the city!",
     },
   ]);
   const [input, setInput] = useState("");
@@ -47,12 +47,39 @@ export default function NexusChat() {
   }, [messages]);
 
   return (
-    <div className="flex flex-col h-screen bg-[#d2ddbb] p-4">
-      <div className="flex items-center gap-2 mb-4">
-        <img src="/nexus-avatar.png" alt="Nexus" className="w-10 h-10" />
-        <h1 className="text-xl font-bold text-[#262626]">Nexus Chat</h1>
+    <div className="flex flex-col h-screen bg-[#1a1a1a] p-4">
+      {/* ENCABEZADO CON VIDEO */}
+      <div className="flex flex-col items-center mb-2">
+        <video
+          src="/nexusvideo.mp4"
+          autoPlay
+          loop
+          muted
+          className="w-[100px] h-[100px] rounded-full shadow-md"
+        />
+        <h1 className="text-2xl font-blackops text-white mt-2 uppercase">
+          NEXT HOUSE COPENHAGEN
+        </h1>
+
+        {/* BOTONES DE ACCESO */}
+        <div className="flex gap-4 mt-4">
+          <button
+            onClick={() => onSelectView("groupChat")}
+            className="bg-[#04f9c2] text-black px-4 py-2 rounded-xl font-blackops text-sm hover:bg-[#02e1af]"
+          >
+            🧑‍🤝‍🧑 Group Chat
+          </button>
+          <button
+            onClick={() => onSelectView("activities")}
+            className="bg-[#04f9c2] text-black px-4 py-2 rounded-xl font-blackops text-sm hover:bg-[#02e1af]"
+          >
+            📅 Today's Activities
+          </button>
+        </div>
       </div>
-      <div className="flex-1 overflow-y-auto space-y-4 pr-2">
+
+      {/* MENSAJES */}
+      <div className="flex-1 overflow-y-auto space-y-4 pr-2 mt-4">
         {messages.map((msg, idx) => (
           <div
             key={idx}
@@ -62,9 +89,9 @@ export default function NexusChat() {
           >
             {msg.sender === "nexus" && (
               <img
-                src="/nexus-avatar.png"
+                src="/nexuspic.png"
                 alt="Nexus"
-                className="w-8 h-8 mr-2 rounded-full"
+                className="w-6 h-6 mr-2 rounded-full object-cover"
               />
             )}
             <div
@@ -79,10 +106,12 @@ export default function NexusChat() {
           </div>
         ))}
         {loading && (
-          <div className="text-sm text-[#262626] italic">Nexus is typing...</div>
+          <div className="text-sm text-white italic">Nexus is typing...</div>
         )}
         <div ref={messagesEndRef} />
       </div>
+
+      {/* INPUT */}
       <div className="mt-4 flex gap-2">
         <input
           className="flex-1 px-4 py-2 rounded-xl bg-white text-[#262626] shadow-md"
@@ -92,7 +121,7 @@ export default function NexusChat() {
           placeholder="Ask Nexus anything..."
         />
         <button
-          className="px-4 py-2 rounded-xl bg-[#262626] text-white hover:bg-black"
+          className="px-4 py-2 rounded-xl bg-[#04f9c2] text-black hover:bg-[#02e1af] font-blackops uppercase"
           onClick={handleSend}
           disabled={loading}
         >
