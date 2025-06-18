@@ -20,22 +20,34 @@ export default function NexusChat({ onSelectView }) {
     setLoading(true);
 
     try {
-      const res = await fetch(
-        "http://127.0.0.1:5001/nexus-hostel-app/us-central1/chatWithNexus",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ message: input }),
-        }
-      );
+      const res = await fetch("https://us-central1-nexus-hostel-app.cloudfunctions.net/chatWithNexus", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message: input }),
+      });
 
       const data = await res.json();
+
+      if (!res.ok) {
+        console.error("🔴 Backend error:", data);
+        throw new Error(data?.error || "Unknown backend error");
+      }
+
+      if (!data.reply) {
+        console.warn("⚠️ No 'reply' found in response:", data);
+        throw new Error("Reply missing from backend response");
+      }
+
       const reply = { sender: "nexus", text: data.reply };
       setMessages((prev) => [...prev, reply]);
-    } catch {
+    } catch (err) {
+      console.error("❌ Error al hablar con Nexus:", err);
       setMessages((prev) => [
         ...prev,
-        { sender: "nexus", text: "Oops! Something went wrong." },
+        {
+          sender: "nexus",
+          text: `Oops! Something went wrong.\n(${err.message})`,
+        },
       ]);
     } finally {
       setLoading(false);
